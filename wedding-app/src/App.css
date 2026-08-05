@@ -663,17 +663,18 @@
 @media (max-width: 480px) {
   .main-nav {
     top: 12px;
-    padding: 8px 12px;
-    gap: 12px;
+    padding: 8px 10px;
+    gap: 8px;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 96%;
+    max-width: calc(100% - 16px);
     position: fixed;
+    border-radius: 999px;
   }
 
   .nav-link {
-    padding: 6px 10px;
-    font-size: 0.9rem;
+    padding: 6px 8px;
+    font-size: 0.82rem;
   }
 
   .photos-hero,
@@ -694,13 +695,15 @@
   }
 
   .gallery {
-    gap: 12px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .photo-card {
-    aspect-ratio: 4/3;
-    padding: 6px;
+    aspect-ratio: 1 / 1;
+    padding: 5px;
+    border-width: 2px;
+    border-radius: 10px;
   }
 
   .story-split {
@@ -887,6 +890,28 @@
   .story-copy,
   .story-media {
     flex-basis: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .our-story-page {
+    padding: 84px 14px 40px;
+  }
+
+  .story-hero {
+    padding: 8px 0 24px;
+  }
+
+  .story-copy h2 {
+    font-size: 1.45rem;
+  }
+
+  .story-copy p {
+    font-size: 0.95rem;
+  }
+
+  .story-media img {
+    max-height: 320px;
   }
 }
 

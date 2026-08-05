@@ -1,9 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
   background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
   color: #4a4a4a;
   overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* Center container */
@@ -253,20 +259,54 @@ body {
 }
 
 @media (max-width: 680px) {
+  .home-page {
+    padding-top: 0;
+  }
+
   .home-hero {
     min-height: 60vh;
-    padding: 40px 16px 30px;
+    padding: 88px 16px 28px;
+  }
+
+  .hero-copy {
+    width: 100%;
+  }
+
+  .hero-meta {
+    font-size: 0.8rem;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(2.1rem, 7vw, 2.9rem);
+    line-height: 1.2;
+  }
+
+  .hero-countdown {
+    font-size: 0.9rem;
+  }
+
+  .home-card {
+    padding: 18px 0 8px;
+  }
+
+  .home-card h2 {
+    font-size: clamp(1.35rem, 5vw, 1.8rem);
+  }
+
+  .home-card p {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
   }
 
   .home-body {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 30px 16px;
+    gap: 20px;
+    padding: 24px 16px 28px;
     min-height: auto;
   }
 
   .hero-nav {
-    gap: 14px;
+    gap: 10px;
     padding: 10px 12px;
   }
 
@@ -278,19 +318,32 @@ body {
   }
 
   .body-right {
-    min-height: 300px;
+    min-height: 260px;
+  }
+
+  .section-card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .section-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .section-card p {
+    font-size: 0.92rem;
   }
 }
 
 /* Extra small mobile tweaks */
 @media (max-width: 480px) {
   .home-hero {
-    padding: 28px 12px 22px;
+    padding: 84px 12px 20px;
   }
 
   .hero-nav {
     padding: 8px 10px;
-    gap: 10px;
+    gap: 8px;
   }
 
   .hero-heart {
@@ -301,8 +354,12 @@ body {
   }
 
   .home-body {
-    padding: 20px 12px;
-    gap: 18px;
+    padding: 18px 12px 24px;
+    gap: 16px;
+  }
+
+  .section-card {
+    padding: 14px;
   }
 
   .footer-content {
