@@ -362,9 +362,27 @@ body {
     padding: 14px;
   }
 
+  .footer {
+    padding: 16px 0;
+  }
+
   .footer-content {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .footer-nav {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer-nav a {
+    font-size: 0.85rem;
+  }
+
+  .footer p {
+    font-size: 0.85rem;
+    line-height: 1.6;
   }
 }
 
@@ -385,7 +403,7 @@ body {
 .footer-nav {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
   margin-bottom: 12px;
   flex-wrap: wrap;
 }
